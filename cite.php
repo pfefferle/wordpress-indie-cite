@@ -31,10 +31,10 @@ function cite_shortlink() {
     case "aside":
     case "status":
 ?>
-    <p>
-      <label for="cite-blockquote"><?php _e("HTML", "cite"); ?></label>
-      <input id="cite-blockquote" class="code" type="text" size="70" value="&lt;blockquote&gt;&lt;p&gt;<?php echo get_the_excerpt(); ?>&lt;/p&gt;&lt;/blockquote&gt;">
-    </p>
+  <p>
+    <label for="cite-blockquote"><?php _e("HTML", "cite"); ?></label>
+    <input id="cite-blockquote" class="code" type="text" size="70" value="&lt;blockquote&gt;&lt;p&gt;<?php echo get_the_excerpt(); ?>&lt;/p&gt;&lt;/blockquote&gt;">
+  </p>
 <?php
       break;
     default:
