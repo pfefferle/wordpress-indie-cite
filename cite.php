@@ -15,7 +15,7 @@ function cite_init() {
 }
 add_action('init', 'cite_init');
 
-function cite_shortlink() {
+function cite_content() {
   ?>
   <p>
     <label for="cite-shortlink"><?php _e("Shortlink", "cite"); ?></label>
@@ -33,7 +33,7 @@ function cite_shortlink() {
 ?>
   <p>
     <label for="cite-blockquote"><?php _e("HTML", "cite"); ?></label>
-    <input id="cite-blockquote" class="code" type="text" size="70" value="&lt;blockquote&gt;&lt;p&gt;<?php echo get_the_excerpt(); ?>&lt;/p&gt;&lt;/blockquote&gt;">
+    <input id="cite-blockquote" class="code" type="text" size="70" value="&lt;blockquote&gt;&lt;p&gt;<?php echo get_the_excerpt(); ?>&lt;/p&gt;&lt;small&gt;—&nbsp;by &lt;a href=&quot;<?php echo get_permalink(); ?>&quot; class=&quot;h-card&quot; title=&quot;<?php echo get_the_author(); ?>&quot;&gt;<?php echo get_the_author(); ?>&lt;/a&gt;&lt;/small&gt;&lt;/blockquote&gt;">
   </p>
 <?php
       break;
@@ -47,4 +47,4 @@ function cite_shortlink() {
       break;
   }
 }
-add_action('comment_form_after', 'cite_shortlink');
+add_action('comment_form', 'cite_content', 99);
