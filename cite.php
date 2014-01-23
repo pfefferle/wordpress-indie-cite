@@ -2,7 +2,7 @@
 /*
  Plugin Name: Cite
  Plugin URI: http://github.com/pfefferle/wordpress-cite
- Description:
+ Description: Nice citation forms for the comments section
  Author: Matthias Pfefferle
  Author URI: http://notizblog.org
  Version: 1.0.0-dev
@@ -47,4 +47,4 @@ function cite_content() {
       break;
   }
 }
-add_action('comment_form', 'cite_content', 99);
+add_action('comment_form_after', 'cite_content', 99);
