@@ -1,14 +1,15 @@
 <?php
-/*
- Plugin Name: Cite
- Plugin URI: http://github.com/pfefferle/wordpress-cite
- Description: Nice citation forms for the comments section
- Author: Matthias Pfefferle
- Author URI: http://notizblog.org
- Version: 1.0.0-dev
- License: GPL v3 (http://www.gnu.org/licenses/gpl.html)
- Text Domain: cite
-*/
+/**
+ * Plugin Name: Cite
+ * Plugin URI: http://github.com/pfefferle/wordpress-cite
+ * Description: Nice citation forms for the comments section
+ * Author: Matthias Pfefferle
+ * Author URI: http://notizblog.org
+ * Version: 1.0.0
+ * License: GPL v3
+ * License URI: http://www.gnu.org/licenses/gpl.html
+ * Text Domain: cite
+ */
 
 function cite_init() {
 	load_plugin_textdomain( 'cite', null, basename( dirname( __FILE__ ) ) );
