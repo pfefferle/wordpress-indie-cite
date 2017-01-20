@@ -1,11 +1,11 @@
 <?php
 /**
- * Plugin Name: Cite
+ * Plugin Name: Indie Cite
  * Plugin URI: http://github.com/pfefferle/wordpress-indie-cite
  * Description: Nice citation forms for the comments section
  * Author: Matthias Pfefferle
  * Author URI: http://notizblog.org
- * Version: 1.0.0
+ * Version: 1.0.1
  * License: MIT
  * License URI: http://www.gnu.org/licenses/gpl.html
  * Text Domain: indie-cite
