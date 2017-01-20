@@ -1,0 +1,19 @@
+{
+  "name": "pfefferle/wordpress-indie-cite",
+  "description": "Nice citation forms for the comments section.",
+  "type": "wordpress-plugin",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Matthias Pfefferle",
+      "homepage": "http://notiz.blog"
+    }
+  ],
+  "require": {
+    "php": ">=5.6.0",
+    "composer/installers": "~1.0"
+  },
+  "extra": {
+    "installer-name": "indie-cite"
+  }
+}
