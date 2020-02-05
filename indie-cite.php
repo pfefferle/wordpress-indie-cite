@@ -7,7 +7,7 @@
  * Author URI: https://notiz.blog
  * Version: 1.0.2
  * License: MIT
- * License URI: http://www.gnu.org/licenses/gpl.html
+ * License URI: https://opensource.org/licenses/MIT
  * Text Domain: indie-cite
  *
  * GitHub Plugin URI: pfefferle/wordpress-indie-cite
