@@ -4,11 +4,14 @@
  * Plugin URI: http://github.com/pfefferle/wordpress-indie-cite
  * Description: Nice citation forms for the comments section
  * Author: Matthias Pfefferle
- * Author URI: http://notizblog.org
- * Version: 1.0.1
+ * Author URI: https://notiz.blog
+ * Version: 1.0.2
  * License: MIT
  * License URI: http://www.gnu.org/licenses/gpl.html
  * Text Domain: indie-cite
+ *
+ * GitHub Plugin URI: pfefferle/wordpress-indie-cite
+ * GitHub Plugin URI: https://github.com/pfefferle/wordpress-indie-cite
  */
 
 function indie_cite_init() {

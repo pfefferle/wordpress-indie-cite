@@ -1,0 +1,19 @@
+{
+	"name": "indie-cite",
+	"description": "Nice citation forms for the comments section",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/pfefferle/wordpress-indie-cite.git"
+	},
+	"author": "Matthias Pfefferle",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/pfefferle/wordpress-indie-cite/issues"
+	},
+	"homepage": "https://github.com/pfefferle/wordpress-indie-cite#readme",
+	"devDependencies": {
+		"grunt": "^1.0.4",
+		"grunt-checktextdomain": "^1.0.1",
+		"grunt-wp-i18n": "^1.0.3"
+	}
+}
