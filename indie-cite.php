@@ -5,7 +5,7 @@
  * Description: Nice citation forms for the comments section
  * Author: Matthias Pfefferle
  * Author URI: https://notiz.blog
- * Version: 1.0.2
+ * Version: 1.0.3
  * License: MIT
  * License URI: https://opensource.org/licenses/MIT
  * Text Domain: indie-cite
@@ -31,24 +31,17 @@ function indie_cite_content() {
 	</p>
 	<?php
 	// some comment ;)
-	switch ( get_post_format() ) {
-		case 'aside':
-		case 'status':
-?>
-	<p>
-		<label for="indie-cite-blockquote"><?php _e( 'HTML', 'indie-cite' ); ?></label>
-		<input id="indie-cite-blockquote" class="code" type="text" size="70" value="&lt;blockquote&gt;&lt;p&gt;<?php echo get_the_excerpt(); ?>&lt;/p&gt;&lt;small&gt;—&nbsp;by &lt;a href=&quot;<?php echo get_permalink(); ?>&quot; class=&quot;h-card&quot; title=&quot;<?php echo get_the_author(); ?>&quot;&gt;<?php echo get_the_author(); ?>&lt;/a&gt;&lt;/small&gt;&lt;/blockquote&gt;">
-	</p>
-<?php
-			break;
-		default:
-?>
+	if ( get_the_title() ) { ?>
 	<p>
 		<label for="indie-cite-cite"><?php _e( 'HTML', 'indie-cite' ); ?></label>
 		<input id="indie-cite-cite" class="code" type="text" size="70" value="&lt;cite class=&quot;h-cite&quot;&gt;&lt;a class=&quot;u-url p-name&quot; href=&quot;<?php echo get_permalink(); ?>&quot;&gt;<?php echo get_the_title(); ?>&lt;/a&gt; (&lt;span class=&quot;p-author h-card&quot; title=&quot;<?php echo get_the_author(); ?>&quot;&gt;<?php echo get_the_author(); ?>&lt;/span&gt; &lt;time class=&quot;dt-published&quot; datetime=&quot;<?php echo get_the_date( 'c' ); ?>&quot;&gt;<?php echo get_the_date(); ?>&lt;/time&gt;)&lt;/cite&gt;">
 	</p>
-<?php
-			break;
+	<?php } else { ?>
+	<p>
+		<label for="indie-cite-blockquote"><?php _e('HTML', 'indie-cite'); ?></label>
+		<input id="indie-cite-blockquote" class="code" type="text" size="70" value="&lt;blockquote&gt;&lt;p&gt;<?php echo get_the_excerpt(); ?>&lt;/p&gt;&lt;small&gt;—&nbsp;by &lt;a href=&quot;<?php echo get_permalink(); ?>&quot; class=&quot;h-card&quot; title=&quot;<?php echo get_the_author(); ?>&quot;&gt;<?php echo get_the_author(); ?>&lt;/a&gt;&lt;/small&gt;&lt;/blockquote&gt;">
+	</p>
+	<?php
 	}
 }
 add_action( 'comment_form_after', 'indie_cite_content', 99 );
