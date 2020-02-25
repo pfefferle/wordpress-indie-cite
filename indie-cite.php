@@ -5,7 +5,7 @@
  * Description: Nice citation forms for the comments section
  * Author: Matthias Pfefferle
  * Author URI: https://notiz.blog
- * Version: 1.0.4
+ * Version: 1.0.5
  * License: MIT
  * License URI: https://opensource.org/licenses/MIT
  * Text Domain: indie-cite
