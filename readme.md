@@ -1,4 +1,4 @@
-# Indie Cite
+# IndieCite
 
 ## Description
 
